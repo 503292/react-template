@@ -1,0 +1,60 @@
+@import '../../../assets/styles/variables.scss';
+
+.wrapForm {
+  display: flex;
+  height: 100%;
+  z-index: 20000000;
+  border: 1px solid #a68e52;
+}
+
+.form {
+  width: 50%;
+  padding: 40px;
+}
+.form input {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #dddddd;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+.form p {
+  margin: 0;
+  font-size: 14px;
+}
+.title {
+  font-family: Cormorant;
+  font-weight: 500;
+  font-size: 68px;
+  margin: 0;
+  line-height: 68px;
+  margin-bottom: 40px;
+}
+.inputName {
+}
+.inputPhone {
+}
+.sendBtn {
+  width: 182px;
+  height: 38px;
+  color: white;
+  font-size: 10px;
+  border: none;
+  border-radius: 2px;
+  background-color: $dark-yellow;
+  margin-top: 32px;
+}
+.bgImage {
+  width: 50%;
+  // height: 100%;
+}
+.bgImage img {
+  position: absolute;
+  top: 0;
+  width: 375px;
+  height: 490px;
+  object-fit: cover;
+  z-index: -5;
+}

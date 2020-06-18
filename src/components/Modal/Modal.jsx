@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import css from './Modal.module.css';
+import OrderCallForm from '../Header/OrderCallForm/OrderCallForm';
+import { ReactComponent as Close } from '../../assets/image/close.svg';
 
 const Modal = ({ isShowing, hide }) =>
   isShowing
@@ -23,10 +25,11 @@ const Modal = ({ isShowing, hide }) =>
                   aria-label="Close"
                   onClick={hide}
                 >
-                  <span aria-hidden="true">&times;</span>
+                  {/* <span aria-hidden="true">&times;</span> */}
+                  <Close className={css.close} aria-hidden="true" />
                 </button>
               </div>
-              <p>Hello, Im a modal.</p>
+              <OrderCallForm />
             </div>
           </div>
         </>,
