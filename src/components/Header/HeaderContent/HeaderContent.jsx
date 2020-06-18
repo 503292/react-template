@@ -18,7 +18,6 @@ const HeaderContent = () => {
               Заказать звонок
             </button>
           </div>
-
           <button className={css.btnLang} type="button">
             ua
           </button>
