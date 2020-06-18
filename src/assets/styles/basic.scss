@@ -1,5 +1,5 @@
-@import './normalize.css';
 @import './variables.scss';
+@import './normalize.css';
 @import '../fonts/fonts.css';
 
 html {
@@ -21,6 +21,7 @@ body {
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   transition: color 150ms ease-out, background-color 150ms ease-out;
   min-width: 320px;
+  // color: $dark-yellow;
 }
 
 img {

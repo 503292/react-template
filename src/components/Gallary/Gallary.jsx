@@ -1,8 +1,8 @@
 import React from 'react';
-// import css from './Gallary.module.scss';
+import css from './Gallary.module.scss';
 
 const Gallary = () => {
-  return <section>Gallary</section>;
+  return <section className={css.wpapGallary}>Gallary</section>;
 };
 
 export default Gallary;

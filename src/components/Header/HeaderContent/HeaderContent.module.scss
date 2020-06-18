@@ -1,26 +1,69 @@
+@import '../../../assets/styles/variables.scss';
+
 .wrapContent {
 }
-/*  */
+/* TOP */
 
 .topHeader {
   display: flex;
-  height: 200px;
+  align-items: center;
+  // height: 200px;
 }
 .logo {
-  padding: 50px;
+  padding: 22px 45px;
 }
-.phone {
+.wrapCall {
+  padding: 0 0 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.btnCall {
-  color: red;
-  background-color: transparent;
-  border: none;
-  border-bottom: 1px solid green;
+.wrapCall div {
+  padding: 0 40px 0 10px;
+}
+.phoneIcon {
+  width: 33px;
+  height: 33px;
+  padding: 5px;
+  border: 1px solid #757575;
+  border-radius: 50px;
 }
 
-/*  */
+.phone {
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 26px;
+  color: $dark-yellow;
+  margin: 0;
+}
+
+.btnCall {
+  color: white;
+  background-color: transparent;
+  border: none;
+  line-height: 1.5;
+  padding: 0;
+}
+.btnCall::after {
+  content: '';
+  display: block;
+  height: 2px;
+  background-color: $dark-yellow;
+}
+.btnLang {
+  background-color: transparent;
+  border: 1px solid #757575;
+  border-radius: 50px;
+  color: white;
+  width: 33px;
+  height: 33px;
+  text-transform: uppercase;
+  padding: 0;
+}
+
+/* CENTER */
 .centerHeader {
 }
-/*  */
+/* BOTTOM */
 .bottomHeader {
 }
