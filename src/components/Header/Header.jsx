@@ -1,8 +1,13 @@
 import React from 'react';
-// import css from './Header.module.css';
+import SliderTop from './SliderTop/SliderTop';
+// import css from './Header.module.scss';
 
 const Header = () => {
-  return <header>header</header>;
+  return (
+    <header>
+      <SliderTop />
+    </header>
+  );
 };
 
 export default Header;

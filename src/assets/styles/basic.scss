@@ -1,4 +1,5 @@
 @import './normalize.css';
+@import './variables.scss';
 @import '../fonts/fonts.css';
 
 html {
@@ -7,8 +8,6 @@ html {
 
 html {
   box-sizing: border-box;
-  width: 100vw;
-  overflow: hidden;
 }
 *,
 *::before,

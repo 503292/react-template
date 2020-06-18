@@ -1,5 +1,5 @@
 import React from 'react';
-// import css from './Documents.module.css';
+// import css from './Documents.module.scss';
 
 const Documents = () => {
   return <section>Documents</section>;
