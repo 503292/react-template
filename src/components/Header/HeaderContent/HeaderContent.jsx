@@ -1,4 +1,8 @@
 import React from 'react';
+
+import Modal from '../../Modal/Modal';
+import useModal from '../../Modal/useModal';
+
 import css from './HeaderContent.module.scss';
 import logo1 from '../../../assets/image/header/logo1.svg';
 
@@ -12,7 +16,18 @@ import { ReactComponent as ArrowL } from '../../../assets/image/header/arrowL.sv
 import { ReactComponent as Circle } from '../../../assets/image/header/circle.svg';
 import logoComfort from '../../../assets/image/header/logo-comfort-life.svg';
 
+// const init = {
+//   bgImg: '',
+//   logoImg: '',
+//   title: '',
+//   description: '',
+//   addres: '',
+//   pageImg: '',
+// };
+
 const HeaderContent = () => {
+  const { isShowing, toggle } = useModal();
+
   return (
     <div className={css.wrapContent}>
       <div className={css.topHeader}>
@@ -21,9 +36,10 @@ const HeaderContent = () => {
           <Phone className={css.phoneIcon} />
           <div>
             <p className={css.phone}>8 (800) 77-512-77</p>
-            <button className={css.btnCall} type="button">
+            <button onClick={toggle} className={css.btnCall} type="button">
               Заказать звонок
             </button>
+            <Modal isShowing={isShowing} hide={toggle} />
           </div>
           <button className={css.btnLang} type="button">
             ua

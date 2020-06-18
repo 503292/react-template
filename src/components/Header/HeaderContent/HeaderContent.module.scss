@@ -11,10 +11,9 @@
   margin-bottom: 120px;
 }
 .logo {
-  padding: 22px 45px;
+  padding: 22px 100px 22px 45px;
 }
 .wrapCall {
-  padding: 0 0 0 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -111,9 +110,18 @@
   border: none;
   line-height: 1.5;
   padding: 0;
+  outline: none;
+  cursor: pointer;
 }
-.btnCall:hover {
+.btnCall:hover,
+.btnCall:focus {
+  color: #04fc61;
+  background-color: rgb(110, 110, 110);
 }
+.btnCall:active {
+  background-color: grey;
+}
+
 .btnCall::after {
   content: '';
   display: block;
@@ -187,6 +195,7 @@
 }
 .bottomHeader p {
   line-height: 1.6;
+  text-transform: uppercase;
 }
 
 .adress {
