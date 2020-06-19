@@ -1,7 +1,9 @@
+@import '../../assets/styles/variables.scss';
+
 .wpapGallary {
   width: 100%;
   height: 100vh;
-  background-color: white;
+  background-color: #e5e5e5;
   display: flex;
   position: relative;
 }
@@ -20,10 +22,7 @@
   height: 90vh;
   object-fit: cover;
 }
-.dots {
-  position: absolute;
-  // bottom: 0;
-}
+
 .thumbnails {
   position: absolute;
   bottom: 0;
@@ -37,4 +36,54 @@
   height: 120px;
   width: 120px;
   object-fit: cover;
+}
+
+.dots {
+  position: absolute;
+  bottom: 16px;
+  left: 80px;
+  z-index: 1;
+}
+.dots li button {
+  background-color: transparent;
+}
+.dots li button:before(:active) {
+  background-color: red;
+  color: green;
+  fill: red;
+}
+
+.wrapControls {
+  position: absolute;
+  bottom: 0;
+  width: 520px;
+  height: 100px;
+  background-color: #fdfbfb;
+}
+
+.switchBtn {
+  border: none;
+  outline: none;
+  width: 50%;
+  height: 44px;
+  padding: 10px 0;
+  background-color: #f1f1f1;
+  font-size: 10px;
+  font-weight: bold;
+}
+.active {
+  background-color: transparent;
+  color: $dark-yellow;
+}
+
+.wrapArrows {
+  display: flex;
+  padding: 12px 0 0 305px;
+}
+.wrapArrows svg {
+  margin: 10px;
+  fill: #757575;
+}
+.wrapArrows svg path {
+  stroke: #757575;
 }
