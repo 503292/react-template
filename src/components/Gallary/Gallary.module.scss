@@ -11,12 +11,9 @@
   width: 20%;
 }
 .carousel {
-  background-color: red;
   height: 90%;
 }
-.carousel div {
-  background-color: green;
-}
+
 .carouselImg {
   width: 100%;
   height: 90vh;
@@ -47,10 +44,8 @@
 .dots li button {
   background-color: transparent;
 }
-.dots li button:before(:active) {
-  background-color: red;
-  color: green;
-  fill: red;
+.dots li button::before {
+  background: $dark-yellow !important;
 }
 
 .wrapControls {
