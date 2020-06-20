@@ -1,8 +1,8 @@
 import React from 'react';
-// import css from './Planning.module.css';
+import css from './Planning.module.scss';
 
 const Planning = () => {
-  return <section>Planning</section>;
+  return <section className={css.wrapPlanning}>Planning</section>;
 };
 
 export default Planning;

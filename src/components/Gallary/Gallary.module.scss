@@ -25,6 +25,7 @@
 .wrapGallaryMenu {
   display: flex;
   flex-direction: column;
+  z-index: 1;
 }
 .wrapGallaryMenu img {
   margin-bottom: 70px;

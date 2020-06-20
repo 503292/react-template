@@ -70,8 +70,13 @@ class Gallary extends Component {
         <div className={css.leftBar}>
           <div className={css.wrapGallaryMenu}>
             <img src={gallaryMenu} alt="gallaryMenu" />
-            <ArrowTop className={css.arrowTop} />
-            <ArrowBottom className={css.arrowBottom} />
+            <a href="#header">
+              <ArrowTop className={css.arrowTop} />
+            </a>
+
+            <a href="#planning">
+              <ArrowBottom className={css.arrowBottom} />
+            </a>
           </div>
           <p>ГАЛЕРЕЯ</p>
           <img className={css.tree} src={tree} alt="gallaryMenu" />
