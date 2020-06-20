@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from './Header/Header';
+import SliderTop from './Header/SliderTop/SliderTop';
 import Gallary from './Gallary/Gallary';
 // import Planning from './Planning/Planning';
 // import Documents from './Documents/Documents';
@@ -8,11 +8,18 @@ import Gallary from './Gallary/Gallary';
 const App = () => {
   return (
     <>
-      <Header />
-      <Gallary />
-      {/* <Planning />
-      <Documents />
-      <Footer /> */}
+      <header id="header">
+        <SliderTop />
+      </header>
+      <main>
+        <Gallary id="gallary" />
+      </main>
+
+      {/* <Planning id="planning"/> */}
+      {/* <Documents id="documents"/> */}
+      {/* <footer>
+        <Footer />
+      </footer> */}
     </>
   );
 };
