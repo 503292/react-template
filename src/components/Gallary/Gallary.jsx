@@ -5,8 +5,12 @@ import '@brainhubeu/react-carousel/lib/style.css';
 
 import { ReactComponent as ArrowL } from '../../assets/image/header/arrowL.svg';
 import { ReactComponent as ArrowR } from '../../assets/image/header/arrowR.svg';
+import { ReactComponent as ArrowTop } from '../../assets/image/arrowTop.svg';
+import { ReactComponent as ArrowBottom } from '../../assets/image/arrowBottom.svg';
 
 import topFoto from '../../assets/image/gallary/bg-gallary.png';
+import gallaryMenu from '../../assets/image/gallary/gallary-menu.svg';
+import tree from '../../assets/image/gallary/green-tree.png';
 
 import css from './Gallary.module.scss';
 
@@ -39,7 +43,15 @@ class Gallary extends Component {
 
     return (
       <section className={css.wpapGallary}>
-        <div className={css.leftBar}>f</div>
+        <div className={css.leftBar}>
+          <div className={css.wrapGallaryMenu}>
+            <img src={gallaryMenu} alt="gallaryMenu" />
+            <ArrowTop className={css.arrowTop} />
+            <ArrowBottom className={css.arrowBottom} />
+          </div>
+          <p>ГАЛЕРЕЯ</p>
+          <img className={css.tree} src={tree} alt="gallaryMenu" />
+        </div>
 
         <Carousel
           className={css.carousel}

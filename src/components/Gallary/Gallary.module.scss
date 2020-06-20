@@ -7,9 +7,43 @@
   display: flex;
   position: relative;
 }
+// leftBar
 .leftBar {
   width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
+
+.leftBar p {
+  margin: 0;
+  padding: 228px 0 0 40px;
+  color: $dark-yellow;
+  align-self: start;
+}
+.wrapGallaryMenu {
+  display: flex;
+  flex-direction: column;
+}
+.wrapGallaryMenu img {
+  margin-bottom: 70px;
+}
+
+.arrowTop {
+  margin: 0 0 25px 10px;
+}
+.arrowBottom {
+  margin: 0 0 0 10px;
+}
+.tree {
+  position: absolute;
+  bottom: 60px;
+  left: 20px;
+  opacity: 0.1;
+}
+
+// carousel
 .carousel {
   height: 90%;
 }
@@ -49,6 +83,7 @@
   background: $dark-yellow !important;
 }
 
+// bottom controls
 .wrapControls {
   position: absolute;
   bottom: 0;
