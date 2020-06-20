@@ -38,6 +38,30 @@ class Gallary extends Component {
     this.setState({ isActiveBtn: !isActiveBtn });
   };
 
+  hendleArrowL = () => {
+    const { slides, value } = this.state;
+    const slideLength = slides.length;
+    if (value === 0) {
+      this.setState({ value: slideLength - 1 });
+    } else {
+      this.setState(prev => ({
+        value: prev.value - 1,
+      }));
+    }
+  };
+
+  hendleArrowR = () => {
+    const { slides, value } = this.state;
+    const slideLength = slides.length;
+    if (slideLength - 1 === value) {
+      this.setState({ value: 0 });
+    } else {
+      this.setState(prev => ({
+        value: prev.value + 1,
+      }));
+    }
+  };
+
   render() {
     const { value, slides, thumbnails, isActiveBtn } = this.state;
 
@@ -101,8 +125,12 @@ class Gallary extends Component {
               КЛАБ РЕЗИДЕНС
             </button>
             <div className={css.wrapArrows}>
-              <ArrowL />
-              <ArrowR />
+              <button type="button" onClick={() => this.hendleArrowL()}>
+                <ArrowL />
+              </button>
+              <button type="button" onClick={() => this.hendleArrowR()}>
+                <ArrowR />
+              </button>
             </div>
           </div>
         </div>

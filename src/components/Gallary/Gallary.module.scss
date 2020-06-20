@@ -111,6 +111,17 @@
   display: flex;
   padding: 12px 0 0 305px;
 }
+.wrapArrows button {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.wrapArrows button:hover {
+  background: #f1f1f1;
+}
+.wrapArrows button:active {
+  background: #f9f9f9;
+}
 .wrapArrows svg {
   margin: 10px;
   fill: #757575;
