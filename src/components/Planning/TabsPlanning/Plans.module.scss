@@ -1,0 +1,94 @@
+@import '../../../assets/styles/variables.scss';
+
+.wrapPlans {
+  width: 100%;
+}
+
+// Tabs
+.tabs {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.tabs li {
+  display: flex;
+  flex-grow: 1;
+}
+
+.wrapTab {
+  display: flex;
+}
+
+.tabBtn {
+  border: none;
+  outline: none;
+  background-color: #f1f1f1;
+  text-transform: uppercase;
+  flex-grow: 1;
+  font-weight: bold;
+  font-size: 10px;
+  height: 44px;
+
+  &_active {
+    background-color: white;
+    color: $dark-yellow;
+  }
+}
+
+.wrapSquare {
+  display: flex;
+}
+.wrapSquare p {
+  margin: 0;
+}
+// carousel
+.containerPlans {
+  display: flex;
+  padding: 40px;
+}
+.wrapCalousel {
+  width: 40%;
+}
+.carousel {
+}
+.dotsText li button {
+  font-size: 10px !important;
+}
+.bigFoto {
+  padding: 10px;
+}
+.wrapInfo {
+  width: 70%;
+  padding: 20px;
+}
+
+.wrapInfoApartments {
+}
+.wrapDescr {
+  display: flex;
+  justify-content: space-between;
+}
+.descrList {
+  list-style: none;
+  width: 45%;
+  padding: 0;
+}
+.descrList li {
+  display: flex;
+  justify-content: space-between;
+}
+.descrList li p {
+  text-align: start;;
+  font-size: 12px;
+  margin: 0;
+}
+.descrList li p:first-child {
+  color: #757575;
+}
+
+.wrapContacts {
+}
+.wrapDots {
+}

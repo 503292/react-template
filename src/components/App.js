@@ -2,8 +2,9 @@ import React from 'react';
 import SliderTop from './Header/SliderTop/SliderTop';
 import Gallary from './Gallary/Gallary';
 import Planning from './Planning/Planning';
-// import Documents from './Documents/Documents';
+import Documents from './Documents/Documents';
 // import Footer from './Footer/Footer';
+import css from './App.module.scss';
 
 const App = () => {
   return (
@@ -13,10 +14,12 @@ const App = () => {
       </header>
       <main>
         <Gallary id="gallary" />
-        <Planning id="planning" />
+        <div className={css.wrapPlaningAndDocument}>
+          <Planning id="planning" />
+          <Documents id="documents" />
+        </div>
       </main>
 
-      {/* <Documents id="documents"/> */}
       {/* <footer>
         <Footer />
       </footer> */}

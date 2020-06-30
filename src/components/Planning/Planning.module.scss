@@ -3,4 +3,36 @@
 .wrapPlanning {
   width: 100%;
   height: 100vh;
+  display: flex;
+}
+
+.leftBar {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.leftBar p {
+  margin: 0;
+  padding: 228px 0 0 40px;
+  color: $dark-yellow;
+  align-self: start;
+}
+
+.wrapPlaningMenu {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+.wrapPlaningMenu img {
+  margin-bottom: 70px;
+}
+
+.arrowTop {
+  margin: 0 0 25px 10px;
+}
+.arrowBottom {
+  margin: 0 0 0 10px;
 }

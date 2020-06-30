@@ -1,0 +1,20 @@
+.wrapTabsPlanning {
+  // background-color: tomato;
+  width: 100%;
+}
+.title {
+  font-size: 68px;
+  font-weight: 500;
+  font-family: Cormorant;
+}
+
+// Tabs
+.wrapTabs {
+  background-color: white;
+  height: 70%;
+  width: 80%;
+  box-shadow: 0px 8px 20px rgba(33, 34, 36, 0.1);
+  display: flex;
+  align-items: flex-start;
+}
+
