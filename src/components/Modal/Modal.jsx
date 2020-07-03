@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import css from './Modal.module.css';
-import OrderCallForm from '../Header/OrderCallForm/OrderCallForm';
+import OrderCallForm from '../OrderCallForm/OrderCallForm';
 import { ReactComponent as Close } from '../../assets/image/close.svg';
 
 const Modal = ({ isShowing, hide }) =>

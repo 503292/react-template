@@ -1,4 +1,4 @@
-@import '../../../assets/styles/variables.scss';
+@import '../../assets/styles/variables.scss';
 
 .wrapSlider {
   position: relative;
@@ -223,13 +223,13 @@
 }
 
 .address {
-  background-image: url('../../../assets/image/header/location.svg');
+  background-image: url('../../assets/image/header/location.svg');
   background-repeat: no-repeat;
   padding-left: 30px;
   margin: 0;
 }
 .subway {
-  background-image: url('../../../assets/image/header/subway.svg');
+  background-image: url('../../assets/image/header/subway.svg');
   background-repeat: no-repeat;
   padding-left: 30px;
   margin: 0;

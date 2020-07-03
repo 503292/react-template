@@ -1,6 +1,6 @@
 import React from 'react';
 import css from './OrderCallForm.module.scss';
-import bgForm from '../../../assets/image/gallary/bg-gallary.png';
+import bgForm from '../../assets/image/gallary/bg-gallary.png';
 
 const OrderCallForm = () => {
   return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import SliderTop from './Header/SliderTop/SliderTop';
+import SliderTop from './SliderTop/SliderTop';
 import Gallary from './Gallary/Gallary';
 import Planning from './Planning/Planning';
 import Documents from './Documents/Documents';

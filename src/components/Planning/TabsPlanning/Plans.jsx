@@ -112,7 +112,7 @@ const Plans = () => {
           <div className={css.wrapInfoApartments}>
             <h4>Квартира {info.squareAll}м2</h4>
             <div className={css.wrapDescr}>
-              <ul className={css.descrList}>
+              <ul className={`${css.descrList} ${css.descrListFirst}`}>
                 <li>
                   <p> Будинок</p>
                   <p>{info.buildNumber}</p>
@@ -150,7 +150,15 @@ const Plans = () => {
               </ul>
             </div>
           </div>
-          <div className={css.wrapContacts}>contacts</div>
+          <div className={css.wrapContacts}>
+            <div className={css.callUs}>
+              <p>Свяжитесь с нами, чтобы узнать больше</p>
+            </div>
+            <div className={css.phone}>
+              <p>Отдел продаж:</p>
+              <p>(044) 555 57 75</p>
+            </div>
+          </div>
           <div className={css.wrapDots}>dots</div>
         </div>
       </div>

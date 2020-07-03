@@ -65,6 +65,16 @@
 }
 
 .wrapInfoApartments {
+  box-shadow: 0px 8px 20px rgba(33, 34, 36, 0.05);
+  padding: 20px;
+}
+.wrapInfoApartments h4 {
+  font-family: Cormorant;
+  // font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 68px;
+  margin: 0;
 }
 .wrapDescr {
   display: flex;
@@ -80,15 +90,36 @@
   justify-content: space-between;
 }
 .descrList li p {
-  text-align: start;;
+  text-align: start;
   font-size: 12px;
   margin: 0;
 }
 .descrList li p:first-child {
   color: #757575;
 }
+.descrListFirst {
+  border-right: 0.5px solid #dddddd;
+  padding: 0 45px 0 0;
+}
 
 .wrapContacts {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 24px;
+  color: #757575;
+}
+.callUs {
+  flex: 1;
+}
+.callUs p {
+  padding: 0 40% 0 0;
+}
+.phone {
+  flex: 1;
+}
+.phone p:last-child {
+  color: black;
 }
 .wrapDots {
 }

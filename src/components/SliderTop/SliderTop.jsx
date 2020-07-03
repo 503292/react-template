@@ -1,21 +1,21 @@
 import React, { useState, useRef } from 'react';
-import Modal from '../../Modal/Modal';
-import useModal from '../../Modal/useModal';
+import Modal from '../Modal/Modal';
+import useModal from '../Modal/useModal';
 
 import css from './SliderTop.module.scss';
 
-import bg1 from '../../../assets/image/bg/header-bg1.jpg';
-import bg2 from '../../../assets/image/bg/header-bg2.jpg';
-import logo1 from '../../../assets/image/header/logo1.svg';
-import logo2 from '../../../assets/image/header/logo2.svg';
-import slide1 from '../../../assets/image/header/slide-01.svg';
-import slide2 from '../../../assets/image/header/slide-02.svg';
+import bg1 from '../../assets/image/bg/header-bg1.jpg';
+import bg2 from '../../assets/image/bg/header-bg2.jpg';
+import logo1 from '../../assets/image/header/logo1.svg';
+import logo2 from '../../assets/image/header/logo2.svg';
+import slide1 from '../../assets/image/header/slide-01.svg';
+import slide2 from '../../assets/image/header/slide-02.svg';
 
-import { ReactComponent as Phone } from '../../../assets/image/phone.svg';
-import { ReactComponent as ArrowR } from '../../../assets/image/header/arrowR.svg';
-import { ReactComponent as ArrowL } from '../../../assets/image/header/arrowL.svg';
-import { ReactComponent as Circle } from '../../../assets/image/header/circle.svg';
-import logoComfort from '../../../assets/image/header/logo-comfort-life.svg';
+import { ReactComponent as Phone } from '../../assets/image/phone.svg';
+import { ReactComponent as ArrowR } from '../../assets/image/header/arrowR.svg';
+import { ReactComponent as ArrowL } from '../../assets/image/header/arrowL.svg';
+import { ReactComponent as Circle } from '../../assets/image/header/circle.svg';
+import logoComfort from '../../assets/image/header/logo-comfort-life.svg';
 
 const pages = [
   {
